@@ -1,0 +1,84 @@
+html,
+body {
+  margin: 0;
+  font-size: 20px;
+  background-color: rgb(188, 117, 255);
+}
+
+.container {
+  width: 500px;
+  height: 100%;
+  margin: 100px auto;
+  border-radius: 10px;
+}
+
+.container h2{
+  color: white;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 5px 5px 20px 0px;
+  padding: 20px;
+}
+
+#todo-form {
+  text-align: center;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 5px 5px 20px 0px white;
+  padding: 20px;
+}
+
+#todo-name {
+  width: 300px;
+  padding: 10px;
+  border: 0px solid gray;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 15px;
+  margin-right: 20px;
+  border: 1px solid lightgray;
+}
+
+#todo-form button {
+  padding: 10px 20px;
+  border: 0px;
+  border-radius: 5px;
+  font-size: 15px;
+  color: white;
+  background-color: rgb(204, 149, 255);
+
+}
+
+.list {
+  padding: 50px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 5px 5px 20px 0px white;
+}
+
+.list li {
+  list-style: none;
+  margin: 20px;
+  font-size: 20px;
+  vertical-align: top;
+}
+
+.empty-box {
+  width: 25px;
+  height: 25px;
+  border: 1px solid lightgray;
+  border-radius: 20%;
+}
+
+canvas {
+  width: 25px;
+  height: 25px;
+  margin-right: 20px;
+  border: 1px solid rgba(0, 0, 0, 0);
+  vertical-align: text-bottom;
+}
+
+.line-through {
+  text-decoration: line-through;
+  color: gray
+}
