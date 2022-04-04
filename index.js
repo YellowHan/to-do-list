@@ -7,9 +7,10 @@ const App = () => {
     $(".list").insertAdjacentHTML(
       "beforeend",
       `<li id="list-item${count}">
-      <canvas id="checkBox${count++}" class="empty-box"></canvas>${
+      <canvas id="checkBox${count++}" class="empty"></canvas>${
         $("#todo-name").value
-      }</li>`
+      }</li>`,
+      localStorage.setItem("todolist", $("#todo-name").value)
     );
     $("#todo-name").value = "";
   };
@@ -18,7 +19,7 @@ const App = () => {
     const canvas = $(`#${id}`);
     const ctx = canvas.getContext("2d");
     ctx.lineWidth = 30;
-    ctx.strokeStyle = "#8a2be2";
+    ctx.strokeStyle = "rgb(89, 181, 200)";
     ctx.lineCap = "round";
     ctx.lineJoin = "round";
     let x = 20;
@@ -55,7 +56,7 @@ const App = () => {
 
   $("button").addEventListener("click", addList);
   $(".list").addEventListener("click", (e) => {
-    if (e.target.classList.contains("empty-box")) {
+    if (e.target.classList.contains("empty")) {
       checkRender(e.target.id);
       e.target.className = "checked";
       e.target.closest("li").className = "line-through";
@@ -64,7 +65,7 @@ const App = () => {
 
     if (e.target.classList.contains("checked")) {
       clearRender(e.target.id);
-      e.target.className = "empty-box";
+      e.target.className = "empty";
       e.target.closest("li").className = "";
       return;
     }

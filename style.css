@@ -2,7 +2,7 @@ html,
 body {
   margin: 0;
   font-size: 20px;
-  background-color: rgb(188, 117, 255);
+  background-color: rgb(163, 203, 211);
 }
 
 .container {
@@ -45,7 +45,7 @@ body {
   border-radius: 5px;
   font-size: 15px;
   color: white;
-  background-color: rgb(204, 149, 255);
+  background-color: rgb(89, 181, 200);
 
 }
 
@@ -63,7 +63,7 @@ body {
   vertical-align: top;
 }
 
-.empty-box {
+.empty {
   width: 25px;
   height: 25px;
   border: 1px solid lightgray;
